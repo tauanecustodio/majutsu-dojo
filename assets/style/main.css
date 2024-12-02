@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #907240;
+  --secondary-color: #d3c7aa;
+  --base-color-1: #111111;
+  --base-color-2: #0a0a0c;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--base-color-1);
+}
+
+/* ==================================== header ==================================== */
+
+.header {
+  background-color: var(--base-color-2);
+}
+
+.navbar-brand, 
+.navbar-brand:focus, 
+.nav .nav-link, 
+.navbar-toggler,
+.navbar-toggler:focus {
+  color: var(--secondary-color);
+  box-shadow: none;
+}
+
+.navbar-brand:hover, 
+.nav .nav-link:hover,
+.navbar-toggler:hover {
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.navbar-brand:active h1,
+.navbar-toggler:active {
+  color: var(--primary-color);
+  box-shadow: none;
+  scale: 0.97;
+}
+
+.nav .nav-link.active {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.navbar-toggler {
+  font-size: 2rem;
+}
