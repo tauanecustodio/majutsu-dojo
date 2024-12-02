@@ -70,3 +70,11 @@ const mages = [
       img: "Haruka1.jpg"
     }
 ];
+
+document.addEventListener('click', function (event) {
+  const navCollapse = document.querySelector('.navbar-collapse');
+  if (navCollapse.classList.contains('show') && !event.target.closest('.navbar-toggler')) {
+    const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+    bsCollapse.hide();
+  }
+});

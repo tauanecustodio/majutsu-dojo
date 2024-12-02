@@ -21,6 +21,7 @@ body {
 .nav .nav-link, 
 .navbar-toggler,
 .navbar-toggler:focus {
+  background-color: transparent;
   color: var(--secondary-color);
   box-shadow: none;
 }
@@ -53,9 +54,9 @@ body {
 /* ==================================== main ==================================== */
 
 .carousel .img {
-  max-height: 500px;
+  max-height: 600px;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 h1, h2 {
