@@ -23,7 +23,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/style/main.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" class="scrollspy">
     <header class="header navbar-expand-lg sticky-top">
       <div class="container">
         <nav class="navbar">
@@ -33,14 +33,14 @@
               <h1 class="display-6 fw-bold">Majutsu Dōjō</h1>
             </a>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navigation" aria-controls="menu-navigation" aria-expanded="false" aria-label="Toggle menu">
               <i class="bi bi-list"></i>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="menu-navigation">
               <ul class="navbar-nav nav">
                 <li class="nav-item me-3 fw-bold">
-                  <a class="nav-link px-0 active" href="#">
+                  <a class="nav-link px-0 active" aria-current="page" href="#carousel">
                     <i class="bi bi-house me-1"></i> Home
                   </a>
                 </li>
