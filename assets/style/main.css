@@ -3,6 +3,7 @@
   --secondary-color: #d3c7aa;
   --base-color-1: #111111;
   --base-color-2: #0a0a0c;
+  --shadow-color: #90734033;
 }
 
 body {
@@ -15,20 +16,19 @@ body {
 .header {
   background-color: var(--base-color-2);
 }
-
-.navbar-brand, 
+ 
 .navbar-brand:focus, 
 .nav .nav-link, 
-.navbar-toggler,
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.navbar-toggler:hover {
   background-color: transparent;
   color: var(--secondary-color);
   box-shadow: none;
 }
 
+.navbar-brand,
 .navbar-brand:hover, 
-.nav .nav-link:hover,
-.navbar-toggler:hover {
+.nav .nav-link:hover {
   color: var(--primary-color);
   box-shadow: none;
 }
@@ -49,6 +49,7 @@ body {
 
 .navbar-toggler {
   font-size: 2rem;
+  color: var(--primary-color);
 }
 
 /* ==================================== main ==================================== */
@@ -59,21 +60,85 @@ body {
   object-position: center;
 }
 
+main section:nth-of-type(even) {
+  background: var(--base-color-2);
+}
+
+/* about section */
+
 h1, h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .btn {
   background: transparent;
-  color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn:hover {
   background: var(--primary-color);
+  color: var(--secondary-color);
   border-color: var(--primary-color);
 }
 
 .btn:active {
   scale: 0.96;
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* actives section */
+
+.card {
+  background-color: var(--base-color-2);
+  cursor: default;
+  box-shadow: 0 0 12px var(--shadow-color);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  scale: 1.02;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.card-text {
+  color: var(--secondary-color);
+}
+
+.card .btn {
+  font-size: 0.9rem;
+}
+
+.modal-content {
+  background: var(--base-color-2);
+}
+
+.modal-header {
+  color: var(--primary-color);
+}
+
+.modal {
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.modal-header {
+  border-color: var(--primary-color);
+}
+
+.btn-close {
+  color: var(--primary-color) !important;
+}
+
+.modal-body {
+  color: var(--secondary-color);
 }
