@@ -13,7 +13,7 @@ body {
 
 /* ==================================== header ==================================== */
 
-.header {
+.header, .footer {
   background-color: var(--base-color-2);
 }
  
@@ -136,10 +136,6 @@ h1, h2 {
   border-color: var(--primary-color);
 }
 
-.btn-close {
-  color: var(--primary-color) !important;
-}
-
 .modal-body {
   color: var(--secondary-color);
 }
@@ -207,4 +203,15 @@ h1, h2 {
 
 input, input::placeholder, textarea::placeholder {
   color: var(--secondary-color) !important;
+}
+
+/* ==================================== footer ==================================== */
+
+.footer, .footer a {
+  color: var(--secondary-color);
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+  scale: 1.05;
 }
