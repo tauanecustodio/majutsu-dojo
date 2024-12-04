@@ -142,3 +142,7 @@ h1, h2 {
 .modal-body {
   color: var(--secondary-color);
 }
+
+.badge {
+  background: var(--primary-color);
+}
