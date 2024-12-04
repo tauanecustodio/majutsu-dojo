@@ -72,6 +72,7 @@ h1, h2 {
 
 .btn {
   background: transparent;
+  border-width: 2px;
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
@@ -173,3 +174,37 @@ h1, h2 {
   background: var(--primary-color);
 }
 
+/* contact section */
+
+.accordion-item {
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+}
+
+/* .bg-transparent */
+
+.accordion-button {
+  color: var(--secondary-color);
+}
+
+.contact-form input {
+  border-width: 0 0 2px 0;
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.contact-form select, .contact-form textarea {
+  color: var(--secondary-color);
+  border-width: 2px;
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.contact-form input:focus, .contact-form select:focus {
+  box-shadow: 0 0 0 2px var(--primary-color);
+  background: transparent;
+}
+
+input, input::placeholder, textarea::placeholder {
+  color: var(--secondary-color) !important;
+}
