@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #907240;
+  --primary-color: #BB9B68;
   --secondary-color: #d3c7aa;
   --base-color-1: #111111;
   --base-color-2: #0a0a0c;
-  --shadow-color: #90734033;
+  --shadow-color: #bb9b6833;
 }
 
 body {
@@ -79,14 +79,14 @@ h1, h2 {
 
 .btn:hover {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--base-color-1);
   border-color: var(--primary-color);
 }
 
 .btn:active {
   scale: 0.96;
   background: var(--primary-color) !important;
-  color: var(--secondary-color) !important;
+  color: var(--base-color-1) !important;
   border-color: var(--primary-color) !important;
 }
 
@@ -168,6 +168,7 @@ h1, h2 {
 
 .badge {
   background: var(--primary-color);
+  color: var(--base-color-1);
 }
 
 /* contact section */
@@ -181,6 +182,12 @@ h1, h2 {
 
 .accordion-button {
   color: var(--secondary-color);
+}
+
+.contact-form label {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-form input {

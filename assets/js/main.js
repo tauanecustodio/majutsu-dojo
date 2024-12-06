@@ -5,8 +5,8 @@ const mages = [
     abilities: ["Treinamento de Combate com Magia de Fogo"],
     description: "Kazuo é um mago de fogo conhecido por sua maestria em feitiços destrutivos.",
     category: "elementalMagic",
-    img: "Kazuo1.jpg",
-    imgHover: "Kazuo2.jpg"
+    img: "Kazuo1.webp",
+    imgHover: "Kazuo2.webp"
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ const mages = [
     abilities: ["Magia de Cura Avançada"],
     description: "Rina é uma curandeira altamente habilidosa que se especializa em restaurar ferimentos físicos e mágicos.",
     category: "supportMagic",
-    img: "Rina1.jpg",
-    imgHover: "Rina2.jpg"
+    img: "Rina1.webp",
+    imgHover: "Rina2.webp"
   },
   {
     id: 3,
@@ -23,8 +23,8 @@ const mages = [
     abilities: ["Magia Aérea", "Treinamento de Voo"],
     description: "Yuto é um mago do vento, sua magia envolve a invocação de rajadas de vento e criação de poderosos vórtices.",
     category: "elementalMagic",
-    img: "Yuto1.jpg",
-    imgHover: "Yuto2.jpg"
+    img: "Yuto1.webp",
+    imgHover: "Yuto2.webp"
   },
   {
     id: 4,
@@ -32,8 +32,8 @@ const mages = [
     abilities: ["Magia das Sombras","Invocação"],
     description: "Satsuki é uma feiticeira, sua magia invoca criaturas das trevas e pode manipular sombras para prender ou proteger.",
     category: "darkMagic",
-    img: "Satsuki1.jpg",
-    imgHover: "Satsuki2.jpg"
+    img: "Satsuki1.webp",
+    imgHover: "Satsuki2.webp"
   },
   {
     id: 5,
@@ -41,8 +41,8 @@ const mages = [
     abilities: ["Treinamento de Magia Elemental (Fogo, Terra, Água, Ar)"],
     description: "Hiroshi é um mestre de todos os elementos clássicos, equilibrando fogo, terra, água e ar. Ele é conhecido por criar tempestades elementares poderosas, utilizando sua magia tanto para combate quanto para defesa.",
     category: "elementalMagic",
-    img: "Hiroshi1.jpg",
-    imgHover: "Hiroshi2.jpg"
+    img: "Hiroshi1.webp",
+    imgHover: "Hiroshi2.webp"
   },
   {
     id: 6,
@@ -50,8 +50,8 @@ const mages = [
     abilities: ["Magia de Gelo e Formação de Geleiras"],
     description: "Aya é uma maga de gelo, conhecida por sua habilidade de congelar grandes áreas e criar esculturas de gelo intricadas. Sua magia envolve a criação de grandes paredes de gelo, congelamento de inimigos e invocação de nevascas.",
     category: "elementalMagic",
-    img: "Aya1.jpg",
-    imgHover: "Aya2.jpg"
+    img: "Aya1.webp",
+    imgHover: "Aya2.webp"
   },
   {
     id: 7,
@@ -59,8 +59,8 @@ const mages = [
     abilities: ["Manipulação de Luz","Treinamento de Iluminação"],
     description: "Rei é um mago da luz radiante cujos feitiços são baseados na manipulação da luz pura. Ele é capaz de criar feixes de luz deslumbrantes, escudos protetores e até manipular a luz para fins furtivos.",
     category: "supportMagic",
-    img: "Rei1.jpg",
-    imgHover: "Rei2.jpg"
+    img: "Rei1.webp",
+    imgHover: "Rei2.webp"
   },
   {
     id: 8,
@@ -68,8 +68,8 @@ const mages = [
     abilities: ["Manipulação","Anti-Gravidade"],
     description: "Keiko é uma maga da gravidade energética e aventureira, capaz de manipular as forças gravitacionais. Sua magia permite fazer objetos e pessoas flutuarem ou esmagá-los sob uma força gravitacional intensa, além de criar zonas de gravidade zero.",
     category: "specializedMagic",
-    img: "Keiko1.jpg",
-    imgHover: "Keiko2.jpg"
+    img: "Keiko1.webp",
+    imgHover: "Keiko2.webp"
   },
   {
     id: 9,
@@ -77,8 +77,8 @@ const mages = [
     abilities: ["Magia Temporal", "Manipulação do Tempo"],
     description: "Taro é um mago sábio que pode desacelerar, acelerar ou reverter o tempo. Sua magia frequentemente distorce a realidade, fazendo momentos se repetirem ou avançarem rapidamente, manipulando o tempo em áreas localizadas.",
     category: "specializedMagic",
-    img: "Taro1.jpg",
-    imgHover: "Taro2.jpg"
+    img: "Taro1.webp",
+    imgHover: "Taro2.webp"
   },
   {
     id: 10,
@@ -86,8 +86,8 @@ const mages = [
     abilities: ["Magia Botânica", "Crescimento de Plantas"],
     description: "Haruka é uma maga da natureza especializada em crescimento de plantas e comunicação com o mundo natural. Sua magia envolve a criação de jardins exuberantes, crescimento rápido de plantas e controle de criaturas baseadas em plantas.",
     category: "specializedMagic",
-    img: "Haruka1.jpg",
-    imgHover: "Haruka2.jpg"
+    img: "Haruka1.webp",
+    imgHover: "Haruka2.webp"
   }
 ];
 
@@ -114,13 +114,15 @@ mages.forEach((mage) => {
         <div class="card-cover position-relative">
           <img
             src="./assets/images/character/${mage.img}"
-            alt="${mage.name}"
+            alt="${mage.name} image"
             class="img-default card-img-top"
+            loading="lazy"
           />
           <img
             src="./assets/images/character/${mage.imgHover}"
-            alt="${mage.name} hover"
+            alt="${mage.name} image hover"
             class="img-hover card-img-top"
+            loading="lazy"
           />
         </div>
         <div class="card-body">
