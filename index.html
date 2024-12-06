@@ -35,1065 +35,1083 @@
     <link rel="stylesheet" href="./assets/style/main.css" />
   </head>
   <body>
-    <header class="header navbar-expand-lg sticky-top">
-      <div class="container">
-        <nav class="navbar">
-          <div class="container-fluid p-0">
-            <a class="navbar-brand" href="#" aria-label="voltar para a página principal" title="voltar para a página principal">
-              <span class="display-6 fw-bold">Majutsu Dōjō</span>
-            </a>
 
-            <button
-              class="navbar-toggler"
-              data-bs-toggle="collapse"
-              data-bs-target="#menu-navigation"
-              aria-controls="menu-navigation"
-              aria-expanded="false"
-              aria-label="Abrir e fechar menu"
-              title="Abrir e fechar menu"
-            >
-              <i class="bi bi-list"></i>
-            </button>
-
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="menu-navigation"
-            >
-              <ul class="navbar-nav nav">
-                <li class="nav-item me-3 fw-bold">
-                  <a
-                  class="nav-link px-0 active"
-                  aria-current="page"
-                  href="#carousel"
-                  aria-label="Ir para o ínicio"
-                  >
-                    <i class="bi bi-house me-1"></i> Home
-                  </a>
-                </li>
-                <li class="nav-item me-3 fw-bold">
-                  <a class="nav-link px-0" href="#about" aria-label="Ir para a seção Sobre">
-                    <i class="bi bi-bookmarks me-1"></i> Sobre
-                  </a>
-                </li>
-                <li class="nav-item me-3 fw-bold">
-                  <a class="nav-link px-0" href="#activities" aria-label="Ir para a seção de atividades" aria-disabled="true">
-                    <i class="bi bi-activity"></i> Atividades
-                  </a>
-                </li>
-                <li class="nav-item me-3 fw-bold">
-                  <a class="nav-link px-0" href="#mages" aria-label="Ir para a seção de Magos">
-                    <i class="bi bi-people-fill"></i> Magos
-                  </a>
-                </li>
-                <!-- <li class="nav-item me-3 fw-bold">
-                  <a class="nav-link px-0" href="#reviews" aria-label="Ir para a seção de avaliações">
-                    <i class="bi bi-star-half"></i> Avaliações
-                  </a>
-                </li> -->
-                <li class="nav-item fw-bold">
-                  <a class="nav-link px-0" href="#contact" aria-label="Ir para a seçã Fale conosco">
-                    <i class="bi bi-envelope me-1"></i> Fale conosco
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <div id="loader" class="bg-dark">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Carregando...</span>
       </div>
-    </header>
+    </div>
 
-    <main
-      data-bs-spy="scroll"
-      class="scrollspy"
-      data-bs-smooth-scroll="true"
-      data-bs-target="header"
-    >
-      <section class="carousel slide" data-bs-ride="carousel" id="carousel">
-        <div class="carousel-inner">
-          <!-- slide 1 -->
-          <div class="carousel-item">
-            <img
-              class="img w-100"
-              src="assets/images/slide/slide4.webp"
-              alt="" 
-              loading="lazy"
-              />
-          </div>
-          <!-- slide 2 -->
-          <div class="carousel-item">
-            <img
-              class="img w-100"
-              src="assets/images/slide/slide2.webp"
-              alt="" 
-              loading="lazy"
-            />
-          </div>
-          <!-- slide 3 -->
-          <div class="carousel-item">
-            <img
-              class="img w-100"
-              src="assets/images/slide/slide3.webp"
-              alt="" 
-              loading="lazy"
-            />
-          </div>
-          <!-- slide 4 -->
-          <div class="carousel-item active">
-            <img
-              class="img w-100"
-              src="assets/images/slide/slide1.webp"
-              alt=""
-            />
-          </div>
-          
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            aria-label="Voltar um slide"
-            data-bs-target="#carousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            aria-label="Próximo slide"
-            data-bs-target="#carousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-
-          <div class="carousel-indicators">
-            <button
-              class="active"
-              type="button"
-              aria-label="slide 1"
-              data-bs-target="#carousel"
-              data-bs-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              aria-label="slide 2"
-              data-bs-target="#carousel"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              aria-label="slide 3"
-              data-bs-target="#carousel"
-              data-bs-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              aria-label="slide 4"
-              data-bs-target="#carousel"
-              data-bs-slide-to="3"
-            ></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5" id="about">
+    <div id="content">
+      <header class="header navbar-expand-lg sticky-top">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 order-md-2 text-light">
-              <h1>Prepare-se para o seu Desafio Mágico!</h1>
-              <p>
-                Contrate magos experientes para treinar suas habilidades mágicas
-                e se tornar um mestre em qualquer área do mundo mágico!
-              </p>
-              <h2 class="mt-5">Como funciona</h2>
-
-              <div class="mb-5">
-                <div class="nav nav-pills" id="v-pills-tab" role="tablist">
-                  <button
-                    class="nav-link px-0 me-3 active"
-                    id="v-pills-home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-home"
-                    aria-selected="true"
-                    aria-label="Abrir passo 1"
-                  >
-                    Passo 1
-                  </button>
-                  <button
-                    class="nav-link px-0 me-3"
-                    id="v-pills-profile-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-profile"
-                    aria-selected="false"
-                    aria-label="Abrir passo 2"
-                  >
-                    Passo 2
-                  </button>
-                  <button
-                    class="nav-link px-0 me-3"
-                    id="v-pills-messages-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-messages"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-messages"
-                    aria-selected="false"
-                    aria-label="Abrir passo 3"
-                  >
-                    Passo 3
-                  </button>
-                  <button
-                    class="nav-link px-0 me-3"
-                    id="v-pills-settings-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-settings"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-settings"
-                    aria-selected="false"
-                    aria-label="Abrir passo 4"
-                  >
-                    Passo 4
-                  </button>
-                </div>
-                <div
-                  class="tab-content text-light mt-3"
-                  id="v-pills-tabContent"
-                >
-                  <div
-                    class="tab-pane fade show active"
-                    id="v-pills-home"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-home-tab"
-                    tabindex="0"
-                  >
-                    <p>Escolha seu mago.</p>
-                    <p>
-                      Navegue pela nossa lista de magos experientes e escolha
-                      aquele que mais combina com suas necessidades de
-                      treinamento.
-                    </p>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-profile"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-profile-tab"
-                    tabindex="0"
-                  >
-                    <p>Descreva Seus Objetivos</p>
-                    <p>
-                      Preencha o formulário de orçamento, informando o tipo de
-                      treinamento mágico que você deseja e suas expectativas.
-                    </p>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-messages"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-messages-tab"
-                    tabindex="0"
-                  >
-                    <p>Receba Seu Orçamento</p>
-                    <p>
-                      Após revisar seu pedido, entraremos em contato com um
-                      orçamento personalizado para seu treinamento.
-                    </p>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-settings"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-settings-tab"
-                    tabindex="0"
-                  >
-                    <p>Início do Treinamento</p>
-                    <p>
-                      Assim que você aprovar o orçamento, seu treinamento mágico
-                      começará! Prepare-se para um processo épico de
-                      aprendizado.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a class="btn btn-primary mb-5" href="#mages"
-                >Escolha seu Mago para Treinamento</a
+          <nav class="navbar">
+            <div class="container-fluid p-0">
+              <a class="navbar-brand" href="#" aria-label="voltar para a página principal" title="voltar para a página principal">
+                <span class="display-6 fw-bold">Majutsu Dōjō</span>
+              </a>
+  
+              <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-navigation"
+                aria-controls="menu-navigation"
+                aria-expanded="false"
+                aria-label="Abrir e fechar menu"
+                title="Abrir e fechar menu"
               >
+                <i class="bi bi-list"></i>
+              </button>
+  
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="menu-navigation"
+              >
+                <ul class="navbar-nav nav">
+                  <li class="nav-item me-3 fw-bold">
+                    <a
+                    class="nav-link px-0 active"
+                    aria-current="page"
+                    href="#carousel"
+                    aria-label="Ir para o ínicio"
+                    >
+                      <i class="bi bi-house me-1"></i> Home
+                    </a>
+                  </li>
+                  <li class="nav-item me-3 fw-bold">
+                    <a class="nav-link px-0" href="#about" aria-label="Ir para a seção Sobre">
+                      <i class="bi bi-bookmarks me-1"></i> Sobre
+                    </a>
+                  </li>
+                  <li class="nav-item me-3 fw-bold">
+                    <a class="nav-link px-0" href="#activities" aria-label="Ir para a seção de atividades" aria-disabled="true">
+                      <i class="bi bi-activity"></i> Atividades
+                    </a>
+                  </li>
+                  <li class="nav-item me-3 fw-bold">
+                    <a class="nav-link px-0" href="#mages" aria-label="Ir para a seção de Magos">
+                      <i class="bi bi-people-fill"></i> Magos
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item me-3 fw-bold">
+                    <a class="nav-link px-0" href="#reviews" aria-label="Ir para a seção de avaliações">
+                      <i class="bi bi-star-half"></i> Avaliações
+                    </a>
+                  </li> -->
+                  <li class="nav-item fw-bold">
+                    <a class="nav-link px-0" href="#contact" aria-label="Ir para a seçã Fale conosco">
+                      <i class="bi bi-envelope me-1"></i> Fale conosco
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-6 order-md-1">
+          </nav>
+        </div>
+      </header>
+  
+      <main
+        data-bs-spy="scroll"
+        class="scrollspy"
+        data-bs-smooth-scroll="true"
+        data-bs-target="header"
+      >
+        <section class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <div class="carousel-inner">
+            <!-- slide 1 -->
+            <div class="carousel-item">
               <img
-                src="assets/images/cover.webp"
-                class="d-block w-100 rounded-1"
-                alt="Magos analisando papeis ao redor de uma mesa redonda com uma mapa, objetos mágicos e blocos de papeis"
+                class="img w-100"
+                src="assets/images/slide/slide4.webp"
+                alt="" 
+                loading="lazy"
+                />
+            </div>
+            <!-- slide 2 -->
+            <div class="carousel-item">
+              <img
+                class="img w-100"
+                src="assets/images/slide/slide2.webp"
+                alt="" 
                 loading="lazy"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5" id="activities">
-        <div class="container">
-          <h2 class="text-center pb-4">Atividades & Aventuras</h2>
-          <div class="row g-4">
-            <!-- batles card -->
-            <div class="col-lg-3 col-6">
-              <div class="card border-0">
-                <img
-                  src="./assets/images/products/batles.webp"
-                  alt="Batalha entre dois magos com um juiz a postos, em uma arena com arquibancadas lotadas"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h3 class="card-title text-center">
-                    <i class="bi bi-crosshair"></i> Batalhas
-                  </h3>
-                  <button
-                    type="button"
-                    class="btn mt-3 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#batles-modal"
-                  >
-                    ver mais
-                  </button>
-                </div>
-              </div>
+            <!-- slide 3 -->
+            <div class="carousel-item">
+              <img
+                class="img w-100"
+                src="assets/images/slide/slide3.webp"
+                alt="" 
+                loading="lazy"
+              />
             </div>
-            <!-- missions card -->
-            <div class="col-lg-3 col-6">
-              <div class="card border-0">
-                <img
-                  src="./assets/images/products/missions.webp"
-                  alt="8 magos de costas invocando um portal circular em uma floresta"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h3 class="card-title text-center">
-                    <i class="bi bi-map"></i> Missões
-                  </h3>
-                  <button
-                    type="button"
-                    class="btn mt-3 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#missions-modal"
-                  >
-                    ver mais
-                  </button>
-                </div>
-              </div>
+            <!-- slide 4 -->
+            <div class="carousel-item active">
+              <img
+                class="img w-100"
+                src="assets/images/slide/slide1.webp"
+                alt=""
+              />
             </div>
-            <!-- ofices card -->
-            <div class="col-lg-3 col-6">
-              <div class="card border-0">
-                <img
-                  src="./assets/images/products/ofices.webp"
-                  alt="espaço fechado com diversas mesas e ornamentado com muitas lanternas, alunos interagindo, "
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h3 class="card-title text-center">
-                    <i class="bi bi-bricks"></i> Oficinas
-                  </h3>
-                  <button
-                    type="button"
-                    class="btn mt-3 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ofices-modal"
-                  >
-                    ver mais
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- presentation card -->
-            <div class="col-lg-3 col-6">
-              <div class="card border-0">
-                <img
-                  src="./assets/images/products/presentations.webp"
-                  alt="3 magos se apresentando em uma arena com efeitos de luzes"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h3 class="card-title text-center">
-                    <i class="bi bi-magic"></i> Festivais
-                  </h3>
-                  <button
-                    type="button"
-                    class="btn mt-3 w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target="#presentations-modal"
-                  >
-                    ver mais
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="text-light text-center p-2 mt-4">
-            Entre outros, como círculos de estudos, clubes, cerimônias e muito
-            mais
-          </p>
-
-          <!-- modals  -->
-          <div class="modals">
-            <!-- batles modal  -->
-            <div
-              class="modal fade"
-              id="batles-modal"
-              tabindex="-1"
-              aria-labelledby="batles-modal"
-              aria-hidden="true"
+            
+  
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Voltar um slide"
+              data-bs-target="#carousel"
+              data-bs-slide="prev"
             >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="modalTitleId">Batalhas</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                      id="btn-close"
-                    >
-                      <i class="bi bi-x-lg"></i>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img
-                      class="w-100 mb-3"
-                      src="./assets/images/products/batles.webp"
-                      alt=""
-                    />
-                    <p>
-                      As batalhas mágicas são confrontos épicos entre magos para
-                      testar suas habilidades e estratégias. Desafie outros
-                      magos e demonstre sua maestria em duelos que vão além da
-                      força bruta, exigindo criatividade e inteligência.
-                    </p>
-                    <p>
-                      Participar de batalhas é a melhor forma de ganhar
-                      experiência e aprender com os melhores. Prepare-se para se
-                      tornar uma lenda no mundo mágico!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- missions modal -->
-            <div
-              class="modal fade"
-              id="missions-modal"
-              tabindex="-1"
-              aria-labelledby="missions-modal"
-              aria-hidden="true"
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Próximo slide"
+              data-bs-target="#carousel"
+              data-bs-slide="next"
             >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="modalTitleId">Missões</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <i class="bi bi-x-lg"></i>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img
-                      class="w-100 mb-3"
-                      src="./assets/images/products/missions.webp"
-                      alt=""
-                    />
-                    <p>
-                      As missões mágicas são aventuras desafiadoras para magos
-                      que buscam superar seus limites. Desde explorar
-                      territórios misteriosos até resolver enigmas antigos, cada
-                      missão oferece recompensas únicas e um aprendizado
-                      inesquecível.
-                    </p>
-                    <p>
-                      Reúna seus equipamentos e esteja pronto para descobrir
-                      novos segredos do mundo mágico em cada jornada.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <span class="carousel-control-next-icon"></span>
+            </button>
+  
+            <div class="carousel-indicators">
+              <button
+                class="active"
+                type="button"
+                aria-label="slide 1"
+                data-bs-target="#carousel"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                aria-label="slide 2"
+                data-bs-target="#carousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                aria-label="slide 3"
+                data-bs-target="#carousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                aria-label="slide 4"
+                data-bs-target="#carousel"
+                data-bs-slide-to="3"
+              ></button>
             </div>
-            <!-- ofices modal -->
-            <div
-              class="modal fade"
-              id="ofices-modal"
-              tabindex="-1"
-              aria-labelledby="ofices-modal"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="modalTitleId">Oficinas</h5>
+          </div>
+        </section>
+  
+        <section class="py-5" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 order-md-2 text-light">
+                <h1>Prepare-se para o seu Desafio Mágico!</h1>
+                <p>
+                  Contrate magos experientes para treinar suas habilidades mágicas
+                  e se tornar um mestre em qualquer área do mundo mágico!
+                </p>
+                <h2 class="mt-5">Como funciona</h2>
+  
+                <div class="mb-5">
+                  <div class="nav nav-pills" id="v-pills-tab" role="tablist">
                     <button
+                      class="nav-link px-0 me-3 active"
+                      id="v-pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home"
                       type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
+                      role="tab"
+                      aria-controls="v-pills-home"
+                      aria-selected="true"
+                      aria-label="Abrir passo 1"
                     >
-                      <i class="bi bi-x-lg"></i>
+                      Passo 1
+                    </button>
+                    <button
+                      class="nav-link px-0 me-3"
+                      id="v-pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-profile"
+                      aria-selected="false"
+                      aria-label="Abrir passo 2"
+                    >
+                      Passo 2
+                    </button>
+                    <button
+                      class="nav-link px-0 me-3"
+                      id="v-pills-messages-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-messages"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-messages"
+                      aria-selected="false"
+                      aria-label="Abrir passo 3"
+                    >
+                      Passo 3
+                    </button>
+                    <button
+                      class="nav-link px-0 me-3"
+                      id="v-pills-settings-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-settings"
+                      type="button"
+                      role="tab"
+                      aria-controls="v-pills-settings"
+                      aria-selected="false"
+                      aria-label="Abrir passo 4"
+                    >
+                      Passo 4
                     </button>
                   </div>
-                  <div class="modal-body">
-                    <img
-                      class="w-100 mb-3"
-                      src="./assets/images/products/ofices.webp"
-                      alt=""
-                    />
-                    <p>
-                      As oficinas mágicas são sessões práticas com magos
-                      experientes, projetadas para desenvolver habilidades
-                      específicas como alquimia, encantamentos e invocação de
-                      criaturas.
-                    </p>
-                    <p>
-                      Uma oportunidade perfeita para melhorar suas técnicas e
-                      adquirir conhecimentos diretamente com especialistas do
-                      mundo mágico.
-                    </p>
+                  <div
+                    class="tab-content text-light mt-3"
+                    id="v-pills-tabContent"
+                  >
+                    <div
+                      class="tab-pane fade show active"
+                      id="v-pills-home"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-home-tab"
+                      tabindex="0"
+                    >
+                      <p>Escolha seu mago.</p>
+                      <p>
+                        Navegue pela nossa lista de magos experientes e escolha
+                        aquele que mais combina com suas necessidades de
+                        treinamento.
+                      </p>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-profile"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab"
+                      tabindex="0"
+                    >
+                      <p>Descreva Seus Objetivos</p>
+                      <p>
+                        Preencha o formulário de orçamento, informando o tipo de
+                        treinamento mágico que você deseja e suas expectativas.
+                      </p>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-messages"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab"
+                      tabindex="0"
+                    >
+                      <p>Receba Seu Orçamento</p>
+                      <p>
+                        Após revisar seu pedido, entraremos em contato com um
+                        orçamento personalizado para seu treinamento.
+                      </p>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-settings"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-settings-tab"
+                      tabindex="0"
+                    >
+                      <p>Início do Treinamento</p>
+                      <p>
+                        Assim que você aprovar o orçamento, seu treinamento mágico
+                        começará! Prepare-se para um processo épico de
+                        aprendizado.
+                      </p>
+                    </div>
                   </div>
                 </div>
+  
+                <a class="btn btn-primary mb-5" href="#mages"
+                  >Escolha seu Mago para Treinamento</a
+                >
               </div>
-            </div>
-            <!-- presentation modal -->
-            <div
-              class="modal fade"
-              id="presentations-modal"
-              tabindex="-1"
-              aria-labelledby="presentations-modal"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="modalTitleId">Festivais</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <i class="bi bi-x-lg"></i>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img
-                      class="w-100 mb-3"
-                      src="./assets/images/products/presentations.webp"
-                      alt=""
-                    />
-                    <p>
-                      Celebre o mundo mágico com eventos incríveis nos nossos
-                      festivais. Assista a demonstrações de habilidades raras,
-                      participe de competições amigáveis e faça parte de uma
-                      comunidade vibrante de magos.
-                    </p>
-                    <p>
-                      Os festivais são uma oportunidade de diversão, aprendizado
-                      e conexão com outros apaixonados pela magia. Não perca!
-                    </p>
-                  </div>
-                </div>
+              <div class="col-md-6 order-md-1">
+                <img
+                  src="assets/images/cover.webp"
+                  class="d-block w-100 rounded-1"
+                  alt="Magos analisando papeis ao redor de uma mesa redonda com uma mapa, objetos mágicos e blocos de papeis"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="py-5" id="mages">
-        <div class="container">
-          <div class="row pb-4">
-            <h2 class="text-center">Nossos Magos</h2>
-          </div>
-          <div class="row g-4">
-            <div class="col-lg-2">
-              <nav class="nav nav-pills flex-column">
-                <button
-                  type="button"
-                  class="text-start fw-bold nav-link active"
-                  data-bs-toggle="tab"
-                  data-bs-target="#elemental-magic"
-                >
-                  Mágia Elemental
-                </button>
-                <button
-                  type="button"
-                  class="text-start fw-bold nav-link"
-                  data-bs-toggle="tab"
-                  data-bs-target="#support-magic"
-                >
-                  Mágia de Suporte
-                </button>
-                <button
-                  type="button"
-                  class="text-start fw-bold nav-link"
-                  data-bs-toggle="tab"
-                  data-bs-target="#dark-magic"
-                >
-                  Mágia Sombria
-                </button>
-                <button
-                  type="button"
-                  class="text-start fw-bold nav-link"
-                  data-bs-toggle="tab"
-                  data-bs-target="#specialized-magic"
-                >
-                  Mágia Especializada
-                </button>
-              </nav>
-            </div>
-            <div class="col-lg-10">
-              <div class="tab-content">
-                <div class="tab-pane active" id="elemental-magic">
-                  <div class="row"></div>
-                </div>
-                <div class="tab-pane" id="support-magic">
-                  <div class="row"></div>
-                </div>
-                <div class="tab-pane" id="dark-magic">
-                  <div class="row"></div>
-                </div>
-                <div class="tab-pane" id="specialized-magic">
-                  <div class="row"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5" id="contact">
-        <div class="container">
-          <div class="row g-5">
-            <div class="col-md-6 col-12">
-              <h2 class="text-center">Perguntas frequentes</h2>
-              <div class="accordion accordion-flush" id="fqa">
-                <!-- question 1 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question1"
-                      aria-expanded="false"
-                      aria-controls="question1"
-                    >
-                      Quais tipos de magias são ensinadas nas aulas?
-                    </button>
-                  </h3>
-                  <div
-                    id="question1"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>Oferecemos aulas nas seguintes áreas:</p>
-                      <ul>
-                        <li>Magia elemental: fogo, água, terra, ar, gelo</li>
-                        <li>Magia de suporte: cura, escudos, luz</li>
-                        <li>
-                          Magia sombria: manipulação de sombras, invocações
-                        </li>
-                        <li>Magia especializada: tempo, gravidade, natureza</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 2 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question2"
-                      aria-expanded="false"
-                      aria-controls="question2"
-                    >
-                      As aulas são presenciais ou online?
-                    </button>
-                  </h3>
-                  <div
-                    id="question2"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Atualmente, as aulas podem ser realizadas
-                        presencialmente ou online, dependendo da sua localização
-                        e da disponibilidade do instrutor.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 3 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question3"
-                      aria-expanded="false"
-                      aria-controls="question3"
-                    >
-                      Preciso ter experiência prévia em magia para me inscrever?
-                    </button>
-                  </h3>
-                  <div
-                    id="question3"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Não, nossas aulas atendem a todos os níveis de
-                        habilidade, desde iniciantes (noobs) até magos
-                        experientes que desejam aprimorar suas habilidades.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 4 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question4"
-                      aria-expanded="false"
-                      aria-controls="question4"
-                    >
-                      Preciso de algum equipamento ou material específico?
-                    </button>
-                  </h3>
-                  <div
-                    id="question4"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Na maioria das vezes, fornecemos todo o material
-                        necessário para as aulas. No entanto, para práticas
-                        avançadas, pode ser solicitado que você adquira
-                        equipamentos específicos (como varinhas ou amuletos).
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 5 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question5"
-                      aria-expanded="false"
-                      aria-controls="question5"
-                    >
-                      Qual é a duração média de cada aula?
-                    </button>
-                  </h3>
-                  <div
-                    id="question5"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Cada aula tem, em média, 1 hora e 30 minutos. Contudo,
-                        isso pode ser ajustado de acordo com a necessidade do
-                        aluno.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 6 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question6"
-                      aria-expanded="false"
-                      aria-controls="question6"
-                    >
-                      Quanto custam as aulas?
-                    </button>
-                  </h3>
-                  <div
-                    id="question6"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        O preço varia dependendo do tipo de magia e do nível de
-                        complexidade. Por favor, entre em contato através do
-                        formulário para receber um orçamento personalizado.
-                      </p>
-                      <p>
-                        Aceitamos pagamentos via Pix, cartão de crédito e
-                        transferência bancária. É possível parcelar os cursos em
-                        até 6 vezes sem juros.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 7 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question7"
-                      aria-expanded="false"
-                      aria-controls="question7"
-                    >
-                      É possível aprender mais de um tipo de magia?
-                    </button>
-                  </h3>
-                  <div
-                    id="question7"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Sim! Você pode escolher aulas em diferentes áreas, e
-                        nossos instrutores podem criar um plano de estudo
-                        combinado para atender seus objetivos.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 8 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question8"
-                      aria-expanded="false"
-                      aria-controls="question8"
-                    >
-                      Existem restrições de idade para participar?
-                    </button>
-                  </h3>
-                  <div
-                    id="question8"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Sim, aceitamos alunos com idade mínima de 16 anos. Não
-                        há idade máxima!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 9 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question9"
-                      aria-expanded="false"
-                      aria-controls="question9"
-                    >
-                      Qual a política de cancelamento ou reembolso?
-                    </button>
-                  </h3>
-                  <div
-                    id="question9"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Caso você não possa comparecer a uma aula agendada,
-                        pedimos que avise com 24 horas de antecedência.
-                        Reembolsos podem ser solicitados até 7 dias após a
-                        inscrição.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 10 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question10"
-                      aria-expanded="false"
-                      aria-controls="question10"
-                    >
-                      Onde as aulas presenciais são realizadas?
-                    </button>
-                  </h3>
-                  <div
-                    id="question10"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        As aulas presenciais acontecem em nosso estúdio
-                        localizado no centro da cidade. Detalhes exatos serão
-                        compartilhados após a inscrição.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- question 11 -->
-                <div class="accordion-item bg-transparent">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed bg-transparent bt-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#question11"
-                      aria-expanded="false"
-                      aria-controls="question11"
-                    >
-                      Posso experimentar uma aula antes de me inscrever no curso
-                      completo?
-                    </button>
-                  </h3>
-                  <div
-                    id="question11"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#fqa"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Sim, oferecemos uma primeira aula experimental gratuita
-                        para novos alunos.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-12">
-              <h2 class="text-center">Fale conosco</h2>
-
-              <form action="#" class="contact-form">
-                  <label for="name">Seu none:</label>
-                  <input
-                  type="text"
-                  class="d-block w-100 p-2 mb-3 bg-transparent"
-                  name="full-name"
-                  placeholder="Nome completo"
-                  id="name" required
+        </section>
+  
+        <section class="py-5" id="activities">
+          <div class="container">
+            <h2 class="text-center pb-4">Atividades & Aventuras</h2>
+            <div class="row g-4">
+              <!-- batles card -->
+              <div class="col-lg-3 col-6">
+                <div class="card border-0">
+                  <img
+                    src="./assets/images/products/batles.webp"
+                    alt="Batalha entre dois magos com um juiz a postos, em uma arena com arquibancadas lotadas"
+                    class="card-img-top"
                   />
-                  <label for="email">Email:</label>
-                  <input
-                  type="email"
-                  name="email"
-                  class="d-block w-100 p-2 mb-3 bg-transparent"
-                  placeholder="exemplo@gmail.com"
-                  id="email" required
+                  <div class="card-body">
+                    <h3 class="card-title text-center">
+                      <i class="bi bi-crosshair"></i> Batalhas
+                    </h3>
+                    <button
+                      type="button"
+                      class="btn mt-3 w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#batles-modal"
+                    >
+                      ver mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- missions card -->
+              <div class="col-lg-3 col-6">
+                <div class="card border-0">
+                  <img
+                    src="./assets/images/products/missions.webp"
+                    alt="8 magos de costas invocando um portal circular em uma floresta"
+                    class="card-img-top"
                   />
-                  <label for="tel">Telefone:</label>
-                  <input
-                  type="tel"
-                  name="phone"
-                  class="d-block w-100 p-2 mb-3 bg-transparent"
-                  placeholder="(11)11111-1111"
-                  id="tel" required
+                  <div class="card-body">
+                    <h3 class="card-title text-center">
+                      <i class="bi bi-map"></i> Missões
+                    </h3>
+                    <button
+                      type="button"
+                      class="btn mt-3 w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#missions-modal"
+                    >
+                      ver mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- ofices card -->
+              <div class="col-lg-3 col-6">
+                <div class="card border-0">
+                  <img
+                    src="./assets/images/products/ofices.webp"
+                    alt="espaço fechado com diversas mesas e ornamentado com muitas lanternas, alunos interagindo, "
+                    class="card-img-top"
                   />
-                  <label for="cep">CEP:</label>
-                  <input type="number"
-                  class="d-block w-100 p-2 mb-3 bg-transparent"
-                  name="cep" placeholder="1234-0000" id="cep" required />
-
-                  <label for="type-class">Qual modalidade de aula escolhida:</label>
-                  <select class="p-2 mb-3 d-block w-100 bg-transparent" name="type-class" id="type-class" required>
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="individual">Individual</option>
-                    <option value="group">Em grupo</option>
-                  </select>
-
-                  <label for="local-class">Você prefere aula online ou precencial?</label>
-                  <select class="p-2 mb-3 d-block w-100 bg-transparent" name="local-class" id="local-class" required>
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="online">Online</option>
-                    <option value="precencial">Precencial</option>
-                  </select>
-                  <label for="level">Qual seu nível de mago atual?</label>
-                  <select class="p-2 mb-3 d-block w-100 bg-transparent" name="level" id="level" required>
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="beginner">Iniciante</option>
-                    <option value="intermediate">Intermediário</option>
-                    <option value="advanced">Avançado</option>
-                  </select>
-
-                  <label for="objective">Qual habilidade ou área você gostaria de aprimorar com seu treinamento?</label>
-                  <textarea rows="7" class="d-block w-100 mt-1 bg-transparent p-2"
-                    name="about"
-                    id="objective"
-                    placeholder="Meu treinamento corpo a corpo, minha manipulação de água, minhas invocações..."
-                  ></textarea>
-                  <label for="message-optional" class="mt-2">Há algo mais que deseja perguntar ou dizer?</label>
-                  <textarea rows="7" class="d-block w-100 mt-1 bg-transparent p-2"
-                    name="message"
-                    id="message-optional"
-                    placeholder="Mensagem adicional, dúvidas, expectativas, etc"
-                  ></textarea>
-                <button type="submit" class="btn rounded-0 mt-3 w-100">Solicitar</button>
-              </form>
+                  <div class="card-body">
+                    <h3 class="card-title text-center">
+                      <i class="bi bi-bricks"></i> Oficinas
+                    </h3>
+                    <button
+                      type="button"
+                      class="btn mt-3 w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ofices-modal"
+                    >
+                      ver mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- presentation card -->
+              <div class="col-lg-3 col-6">
+                <div class="card border-0">
+                  <img
+                    src="./assets/images/products/presentations.webp"
+                    alt="3 magos se apresentando em uma arena com efeitos de luzes"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title text-center">
+                      <i class="bi bi-magic"></i> Festivais
+                    </h3>
+                    <button
+                      type="button"
+                      class="btn mt-3 w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#presentations-modal"
+                    >
+                      ver mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-light text-center p-2 mt-4">
+              Entre outros, como círculos de estudos, clubes, cerimônias e muito
+              mais
+            </p>
+  
+            <!-- modals  -->
+            <div class="modals">
+              <!-- batles modal  -->
+              <div
+                class="modal fade"
+                id="batles-modal"
+                tabindex="-1"
+                aria-labelledby="batles-modal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="modalTitleId">Batalhas</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        id="btn-close"
+                      >
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        class="w-100 mb-3"
+                        src="./assets/images/products/batles.webp"
+                        alt=""
+                      />
+                      <p>
+                        As batalhas mágicas são confrontos épicos entre magos para
+                        testar suas habilidades e estratégias. Desafie outros
+                        magos e demonstre sua maestria em duelos que vão além da
+                        força bruta, exigindo criatividade e inteligência.
+                      </p>
+                      <p>
+                        Participar de batalhas é a melhor forma de ganhar
+                        experiência e aprender com os melhores. Prepare-se para se
+                        tornar uma lenda no mundo mágico!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- missions modal -->
+              <div
+                class="modal fade"
+                id="missions-modal"
+                tabindex="-1"
+                aria-labelledby="missions-modal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="modalTitleId">Missões</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        class="w-100 mb-3"
+                        src="./assets/images/products/missions.webp"
+                        alt=""
+                      />
+                      <p>
+                        As missões mágicas são aventuras desafiadoras para magos
+                        que buscam superar seus limites. Desde explorar
+                        territórios misteriosos até resolver enigmas antigos, cada
+                        missão oferece recompensas únicas e um aprendizado
+                        inesquecível.
+                      </p>
+                      <p>
+                        Reúna seus equipamentos e esteja pronto para descobrir
+                        novos segredos do mundo mágico em cada jornada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ofices modal -->
+              <div
+                class="modal fade"
+                id="ofices-modal"
+                tabindex="-1"
+                aria-labelledby="ofices-modal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="modalTitleId">Oficinas</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        class="w-100 mb-3"
+                        src="./assets/images/products/ofices.webp"
+                        alt=""
+                      />
+                      <p>
+                        As oficinas mágicas são sessões práticas com magos
+                        experientes, projetadas para desenvolver habilidades
+                        específicas como alquimia, encantamentos e invocação de
+                        criaturas.
+                      </p>
+                      <p>
+                        Uma oportunidade perfeita para melhorar suas técnicas e
+                        adquirir conhecimentos diretamente com especialistas do
+                        mundo mágico.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- presentation modal -->
+              <div
+                class="modal fade"
+                id="presentations-modal"
+                tabindex="-1"
+                aria-labelledby="presentations-modal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="modalTitleId">Festivais</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <i class="bi bi-x-lg"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        class="w-100 mb-3"
+                        src="./assets/images/products/presentations.webp"
+                        alt=""
+                      />
+                      <p>
+                        Celebre o mundo mágico com eventos incríveis nos nossos
+                        festivais. Assista a demonstrações de habilidades raras,
+                        participe de competições amigáveis e faça parte de uma
+                        comunidade vibrante de magos.
+                      </p>
+                      <p>
+                        Os festivais são uma oportunidade de diversão, aprendizado
+                        e conexão com outros apaixonados pela magia. Não perca!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+  
+        <section class="py-5" id="mages">
+          <div class="container">
+            <div class="row pb-4">
+              <h2 class="text-center">Nossos Magos</h2>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-2">
+                <nav class="nav nav-pills flex-column">
+                  <button
+                    type="button"
+                    class="text-start fw-bold nav-link active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#elemental-magic"
+                  >
+                    Mágia Elemental
+                  </button>
+                  <button
+                    type="button"
+                    class="text-start fw-bold nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#support-magic"
+                  >
+                    Mágia de Suporte
+                  </button>
+                  <button
+                    type="button"
+                    class="text-start fw-bold nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#dark-magic"
+                  >
+                    Mágia Sombria
+                  </button>
+                  <button
+                    type="button"
+                    class="text-start fw-bold nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#specialized-magic"
+                  >
+                    Mágia Especializada
+                  </button>
+                </nav>
+              </div>
+              <div class="col-lg-10">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="elemental-magic">
+                    <div class="row"></div>
+                  </div>
+                  <div class="tab-pane" id="support-magic">
+                    <div class="row"></div>
+                  </div>
+                  <div class="tab-pane" id="dark-magic">
+                    <div class="row"></div>
+                  </div>
+                  <div class="tab-pane" id="specialized-magic">
+                    <div class="row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="py-5" id="contact">
+          <div class="container">
+            <div class="row g-5">
+              <div class="col-md-6 col-12">
+                <h2 class="text-center">Perguntas frequentes</h2>
+                <div class="accordion accordion-flush" id="fqa">
+                  <!-- question 1 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question1"
+                        aria-expanded="false"
+                        aria-controls="question1"
+                      >
+                        Quais tipos de magias são ensinadas nas aulas?
+                      </button>
+                    </h3>
+                    <div
+                      id="question1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>Oferecemos aulas nas seguintes áreas:</p>
+                        <ul>
+                          <li>Magia elemental: fogo, água, terra, ar, gelo</li>
+                          <li>Magia de suporte: cura, escudos, luz</li>
+                          <li>
+                            Magia sombria: manipulação de sombras, invocações
+                          </li>
+                          <li>Magia especializada: tempo, gravidade, natureza</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 2 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question2"
+                        aria-expanded="false"
+                        aria-controls="question2"
+                      >
+                        As aulas são presenciais ou online?
+                      </button>
+                    </h3>
+                    <div
+                      id="question2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Atualmente, as aulas podem ser realizadas
+                          presencialmente ou online, dependendo da sua localização
+                          e da disponibilidade do instrutor.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 3 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question3"
+                        aria-expanded="false"
+                        aria-controls="question3"
+                      >
+                        Preciso ter experiência prévia em magia para me inscrever?
+                      </button>
+                    </h3>
+                    <div
+                      id="question3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Não, nossas aulas atendem a todos os níveis de
+                          habilidade, desde iniciantes (noobs) até magos
+                          experientes que desejam aprimorar suas habilidades.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 4 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question4"
+                        aria-expanded="false"
+                        aria-controls="question4"
+                      >
+                        Preciso de algum equipamento ou material específico?
+                      </button>
+                    </h3>
+                    <div
+                      id="question4"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Na maioria das vezes, fornecemos todo o material
+                          necessário para as aulas. No entanto, para práticas
+                          avançadas, pode ser solicitado que você adquira
+                          equipamentos específicos (como varinhas ou amuletos).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 5 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question5"
+                        aria-expanded="false"
+                        aria-controls="question5"
+                      >
+                        Qual é a duração média de cada aula?
+                      </button>
+                    </h3>
+                    <div
+                      id="question5"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Cada aula tem, em média, 1 hora e 30 minutos. Contudo,
+                          isso pode ser ajustado de acordo com a necessidade do
+                          aluno.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 6 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question6"
+                        aria-expanded="false"
+                        aria-controls="question6"
+                      >
+                        Quanto custam as aulas?
+                      </button>
+                    </h3>
+                    <div
+                      id="question6"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          O preço varia dependendo do tipo de magia e do nível de
+                          complexidade. Por favor, entre em contato através do
+                          formulário para receber um orçamento personalizado.
+                        </p>
+                        <p>
+                          Aceitamos pagamentos via Pix, cartão de crédito e
+                          transferência bancária. É possível parcelar os cursos em
+                          até 6 vezes sem juros.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 7 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question7"
+                        aria-expanded="false"
+                        aria-controls="question7"
+                      >
+                        É possível aprender mais de um tipo de magia?
+                      </button>
+                    </h3>
+                    <div
+                      id="question7"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Sim! Você pode escolher aulas em diferentes áreas, e
+                          nossos instrutores podem criar um plano de estudo
+                          combinado para atender seus objetivos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 8 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question8"
+                        aria-expanded="false"
+                        aria-controls="question8"
+                      >
+                        Existem restrições de idade para participar?
+                      </button>
+                    </h3>
+                    <div
+                      id="question8"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Sim, aceitamos alunos com idade mínima de 16 anos. Não
+                          há idade máxima!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 9 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question9"
+                        aria-expanded="false"
+                        aria-controls="question9"
+                      >
+                        Qual a política de cancelamento ou reembolso?
+                      </button>
+                    </h3>
+                    <div
+                      id="question9"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Caso você não possa comparecer a uma aula agendada,
+                          pedimos que avise com 24 horas de antecedência.
+                          Reembolsos podem ser solicitados até 7 dias após a
+                          inscrição.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 10 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question10"
+                        aria-expanded="false"
+                        aria-controls="question10"
+                      >
+                        Onde as aulas presenciais são realizadas?
+                      </button>
+                    </h3>
+                    <div
+                      id="question10"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          As aulas presenciais acontecem em nosso estúdio
+                          localizado no centro da cidade. Detalhes exatos serão
+                          compartilhados após a inscrição.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- question 11 -->
+                  <div class="accordion-item bg-transparent">
+                    <h3 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent bt-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question11"
+                        aria-expanded="false"
+                        aria-controls="question11"
+                      >
+                        Posso experimentar uma aula antes de me inscrever no curso
+                        completo?
+                      </button>
+                    </h3>
+                    <div
+                      id="question11"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#fqa"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Sim, oferecemos uma primeira aula experimental gratuita
+                          para novos alunos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 col-12">
+                <h2 class="text-center">Fale conosco</h2>
+  
+                <form action="#" class="contact-form">
+                    <label for="name">Seu none:</label>
+                    <input
+                    type="text"
+                    class="d-block w-100 p-2 mb-3 bg-transparent"
+                    name="full-name"
+                    placeholder="Nome completo"
+                    id="name" required
+                    autocomplete="name"
+                    />
+                    <label for="email">Email:</label>
+                    <input
+                    type="email"
+                    name="email"
+                    class="d-block w-100 p-2 mb-3 bg-transparent"
+                    placeholder="exemplo@gmail.com"
+                    id="email" required
+                    autocomplete="Email adrress"
+                    />
+                    <label for="tel">Telefone:</label>
+                    <input
+                    type="tel"
+                    name="phone"
+                    class="d-block w-100 p-2 mb-3 bg-transparent"
+                    placeholder="(11)11111-1111"
+                    id="tel" required
+                    autocomplete="tel"
+                    />
+                    <label for="cep">CEP:</label>
+                    <input type="text"
+                    class="d-block w-100 p-2 mb-3 bg-transparent"
+                    name="cep" placeholder="1234-0000" id="cep" required autocomplete="postal-code" />
+  
+                    <label for="type-class">Qual modalidade de aula escolhida:</label>
+                    <select class="p-2 mb-3 d-block w-100 bg-transparent" name="type-class" id="type-class" required>
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="individual">Individual</option>
+                      <option value="group">Em grupo</option>
+                    </select>
+  
+                    <label for="local-class">Você prefere aula online ou precencial?</label>
+                    <select class="p-2 mb-3 d-block w-100 bg-transparent" name="local-class" id="local-class" required>
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="online">Online</option>
+                      <option value="precencial">Precencial</option>
+                    </select>
+                    <label for="level">Qual seu nível de mago atual?</label>
+                    <select class="p-2 mb-3 d-block w-100 bg-transparent" name="level" id="level" required>
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="beginner">Iniciante</option>
+                      <option value="intermediate">Intermediário</option>
+                      <option value="advanced">Avançado</option>
+                    </select>
+  
+                    <label for="objective">Qual habilidade ou área você gostaria de aprimorar com seu treinamento?</label>
+                    <textarea rows="7" class="d-block w-100 mt-1 bg-transparent p-2"
+                      name="about"
+                      id="objective"
+                      placeholder="Meu treinamento corpo a corpo, minha manipulação de água, minhas invocações..."
+                    ></textarea>
+                    <label for="message-optional" class="mt-2">Há algo mais que deseja perguntar ou dizer?</label>
+                    <textarea rows="7" class="d-block w-100 mt-1 bg-transparent p-2"
+                      name="message"
+                      id="message-optional"
+                      placeholder="Mensagem adicional, dúvidas, expectativas, etc"
+                    ></textarea>
+                  <button type="submit" class="btn rounded-0 mt-3 w-100">Solicitar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+  
+      <footer class="footer text-center pb-2 pt-4">
+        <div class="container">
+          <address class="m-0">
+            <i class="bi bi-geo-alt-fill"></i> Endereço: Rua dos feiticeiros 777 - Mundo Mágico
+          </address>
+          <a class="d-block mt-1" href="mailto:contato@majutsudojo.com" aria-label="Ir para o email" title="Ir para o email"><i class="bi bi-envelope-fill"></i> contato@majutsudojo.com</a>
+          <a class="d-block mt-1" href="tel:77777777777" aria-label="Ir para o telefone" title="Ir para o telefone"><i class="bi bi-telephone-fill"></i> (777) 777-77777</a>
+          <div class="social-medias my-2 fs-4">
+            <a href="#" target="_blank" aria-label="Ir para Instagram" title="Ir para Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="mx-2" target="_blank" aria-label="Ir para Whatsapp" title="Ir para Whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" target="_blank" aria-label="Ir para o discord" title="Ir para o discord"><i class="bi bi-discord"></i></a>
+          </div>
+  
+          <p>© 2024 Mahō Gakuin. Todos os direitos reservados.</p>
         </div>
-      </section>
-    </main>
+      </footer>
+  
+      <button id="backToTop" class="btn" aria-label="ir para o começo da página" title="ir para o começo da página">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    </div>
 
-    <footer class="footer text-center pb-2 pt-4">
-      <div class="container">
-        <address class="m-0">
-          <i class="bi bi-geo-alt-fill"></i> Endereço: Rua dos feiticeiros 777 - Mundo Mágico
-        </address>
-        <a class="d-block mt-1" href="mailto:contato@majutsudojo.com" aria-label="Ir para o email" title="Ir para o email"><i class="bi bi-envelope-fill"></i> contato@majutsudojo.com</a>
-        <a class="d-block mt-1" href="tel:77777777777" aria-label="Ir para o telefone" title="Ir para o telefone"><i class="bi bi-telephone-fill"></i> (777) 777-77777</a>
-        <div class="social-medias my-2 fs-4">
-          <a href="#" target="_blank" aria-label="Ir para Instagram" title="Ir para Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="mx-2" target="_blank" aria-label="Ir para Whatsapp" title="Ir para Whatsapp"><i class="bi bi-whatsapp"></i></a>
-          <a href="#" target="_blank" aria-label="Ir para o discord" title="Ir para o discord"><i class="bi bi-discord"></i></a>
-        </div>
 
-        <p>© 2024 Mahō Gakuin. Todos os direitos reservados.</p>
-      </div>
-    </footer>
 
     <!-- bootstrap -->
     <script
