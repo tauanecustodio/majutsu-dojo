@@ -101,17 +101,6 @@ const mages = [
   },
 ];
 
-document.addEventListener("click", function (event) {
-  const navCollapse = document.querySelector(".navbar-collapse");
-  if (
-    navCollapse.classList.contains("show") &&
-    !event.target.closest(".navbar-toggler")
-  ) {
-    const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
-    bsCollapse.hide();
-  }
-});
-
 const categories = {
   elementalMagic: document.querySelector("#elemental-magic .row"),
   supportMagic: document.querySelector("#support-magic .row"),
@@ -119,72 +108,116 @@ const categories = {
   specializedMagic: document.querySelector("#specialized-magic .row"),
 };
 
-mages.forEach((mage) => {
-  const cardHTML = `
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card p-0 border-0">
-        <div class="card-cover position-relative">
-          <img
-            src="./assets/images/character/${mage.img}"
-            alt="${mage.name} image"
-            class="img-default card-img-top"
-            loading="lazy"
-          />
-          <img
-            src="./assets/images/character/${mage.imgHover}"
-            alt="${mage.name} image hover"
-            class="img-hover card-img-top"
-            loading="lazy"
-          />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title text-center">${mage.name}</h3>
-          <p class="card-text text-light text-justify">${mage.description}</p>
-          <div>
-            ${mage.abilities
-              .map(
-                (ability) =>
-                  `<span class="badge me-1 mb-1 text-wrap p-1 lh-base">${ability}</span>`
-              )
-              .join("")}
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+// Creat mages cards
+const createCard = (mage) => {
+  const fragment = document.createDocumentFragment();
+  
+  // Creat card
+  const cardDiv = document.createElement('div');
+  cardDiv.classList.add('col-6', 'col-md-4', 'col-lg-3');
 
-  if (categories[mage.category]) {
-    categories[mage.category].innerHTML += cardHTML;
-  }
-});
+  // Creat content card
+  const card = document.createElement('div');
+  card.classList.add('card', 'p-0', 'border-0');
 
-window.addEventListener("load", function () {
-  const loader = document.getElementById("loader");
-  const content = document.getElementById("content");
+  const cardCover = document.createElement('div');
+  cardCover.classList.add('card-cover', 'position-relative');
 
-  // Oculta o loader e exibe o conteúdo
-  loader.style.display = "none";
-  content.style.display = "block";
-});
+  const imgDefault = document.createElement('img');
+  imgDefault.src = `./assets/images/character/${mage.img}`;
+  imgDefault.alt = `${mage.name} image`;
+  imgDefault.classList.add('img-default', 'card-img-top');
+  imgDefault.loading = 'lazy';
 
-// --------------------------------------------------------
+  const imgHover = document.createElement('img');
+  imgHover.src = `./assets/images/character/${mage.imgHover}`;
+  imgHover.alt = `${mage.name} image hover`;
+  imgHover.classList.add('img-hover', 'card-img-top');
+  imgHover.loading = 'lazy';
 
+  cardCover.appendChild(imgDefault);
+  cardCover.appendChild(imgHover);
+
+  const cardBody = document.createElement('div');
+  cardBody.classList.add('card-body');
+
+  const cardTitle = document.createElement('h3');
+  cardTitle.classList.add('card-title', 'text-center');
+  cardTitle.textContent = mage.name;
+
+  const cardText = document.createElement('p');
+  cardText.classList.add('card-text', 'text-light', 'text-justify');
+  cardText.textContent = mage.description;
+
+  // Creat badges
+  const abilitiesContainer = document.createElement('div');
+  mage.abilities.forEach(ability => {
+    const abilityBadge = document.createElement('span');
+    abilityBadge.classList.add('badge', 'me-1', 'mb-1', 'text-wrap', 'p-1', 'lh-base');
+    abilityBadge.textContent = ability;
+    abilitiesContainer.appendChild(abilityBadge);
+  });
+
+  // Add to body
+  cardBody.appendChild(cardTitle);
+  cardBody.appendChild(cardText);
+  cardBody.appendChild(abilitiesContainer);
+
+  // Add to card sections
+  card.appendChild(cardCover);
+  card.appendChild(cardBody);
+
+  // Add card
+  cardDiv.appendChild(card);
+
+  fragment.appendChild(cardDiv);
+  return fragment;
+};
+
+
+// Insert categorie menu of mages
+const insertCards = () => {
+  const fragment = document.createDocumentFragment();
+  mages.forEach(mage => {
+    if (categories[mage.category]) {
+      const cardElement = createCard(mage);
+      categories[mage.category].appendChild(cardElement);
+    }
+  });
+};
+
+document.addEventListener("DOMContentLoaded", insertCards);
+
+// -----------------------------------------
+
+// button up
 const backToTopButton = document.getElementById("backToTop");
 
-// Mostra/Esconde o botão com base na posição de rolagem
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 300) {
-    // Exibe o botão após rolar 300px
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
+window.addEventListener("scroll", () => {
+  backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// -----------------------------------------
+
+// click menu
+document.addEventListener("click", (event) => {
+  const navCollapse = document.querySelector(".navbar-collapse");
+  if (navCollapse.classList.contains("show") && !event.target.closest(".navbar-toggler")) {
+    new bootstrap.Collapse(navCollapse, { toggle: false }).hide();
   }
 });
 
-// Faz o scroll para o topo ao clicar no botão
-backToTopButton.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // Animação suave
-  });
+// -----------------------------------------
+
+// load
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("content").style.display = "block";
 });
