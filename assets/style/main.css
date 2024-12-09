@@ -4,6 +4,7 @@
   --base-color-1: #111111;
   --base-color-2: #0a0a0c;
   --shadow-color: #bb9b6833;
+  --text-color: #fff;
 }
 
 body {
@@ -202,7 +203,33 @@ h1, h2 {
   color: var(--base-color-1);
 }
 
+/* review section */
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  overflow: hidden;
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+#reviews h3 {
+  color: var(--primary-color);
+}
+
+#reviews h3+p {
+  color: var(--secondary-color)
+}
+
 /* faq section */
+
+.accordion-button:focus, .accordion-button:active   {
+  box-shadow: 0 0 1px 5px var(--shadow-color);
+}
 
 .faq-content {
   max-width: 800px;
