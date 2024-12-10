@@ -32,7 +32,7 @@ const mages = [
     category: "elementalMagic",
     img: "yuto1.webp",
     imgAlt: "Jovem vestindo kimono branco e verde, segurando uma luz verde nas duas mãos",
-    imgHover: "Yuto2.webp",
+    imgHover: "yuto2.webp",
     imgHoverAlt: "Jovem vestindo kimono branco e verde, segurando uma luz verde, voando com grandes asas brancas"
   },
   {
@@ -44,7 +44,7 @@ const mages = [
     category: "darkMagic",
     img: "satsuki1.webp",
     imgAlt: "Jovem com chapéu com abas grandes, kimono roxo com efeitos dourados e segura uma luz amarela",
-    imgHover: "Satsuki2.webp",
+    imgHover: "satsuki2.webp",
     imgHoverAlt: "Jovem vestindo um kimono roxo com efeitos dourados e segurando uma luz amarela em cada uma das mãos"
   },
   {
@@ -56,7 +56,7 @@ const mages = [
     category: "elementalMagic",
     img: "hiroshi1.webp",
     imgAlt: "Jovem com kimono verde, azul, vermelho segurando um cajado com fogo",
-    imgHover: "Hiroshi2.webp",
+    imgHover: "hiroshi2.webp",
     imgHoverAlt: "Jovem com kimono verde, azul, vermelho segurando um chama nas mãos"
   },
   {
@@ -68,7 +68,7 @@ const mages = [
     category: "elementalMagic",
     img: "aya1.webp",
     imgAlt: "Jovem branca, olhos azuis, cabelo gelo, armadura acizentada e segura um cetro azul na mão",
-    imgHover: "Aya2.webp",
+    imgHover: "aya2.webp",
     imgHoverAlt: "Jovem branca, olhos azuis, cabelo gelo, armadura acizentada"
   },
   {
@@ -80,7 +80,7 @@ const mages = [
     category: "supportMagic",
     img: "rei1.webp",
     imgAlt: "Pequeno jovem com kimono branco e dourado segurando um escudo resplandecente",
-    imgHover: "Rei2.webp",
+    imgHover: "rei2.webp",
     imgHoverAlt: "Pequeno jovem com kimono branco e dourado segurando duas espadas resplandecentes"
   },
   {
@@ -92,7 +92,7 @@ const mages = [
     category: "specializedMagic",
     img: "keiko1.webp",
     imgAlt: "Jovem com traje especial preto voando no espaço",
-    imgHover: "Keiko2.webp",
+    imgHover: "keiko2.webp",
     imgHoverAlt: "Jovem com traje especial preto voando no espaço"
   },
   {
@@ -104,7 +104,7 @@ const mages = [
     category: "specializedMagic",
     img: "taro1.webp",
     imgAlt: "Homen com kimono azulado ornamentado de relógios",
-    imgHover: "Taro2.webp",
+    imgHover: "taro2.webp",
     imgHoverAlt: "Homen com kimono azulado ornamentado de relógios"
   },
   {
@@ -116,7 +116,7 @@ const mages = [
     category: "specializedMagic",
     img: "haruka1.webp",
     imgAlt: "Jovem pequena com kimono branco colhendo plantas na floresta",
-    imgHover: "Haruka2.webp",
+    imgHover: "haruka2.webp",
     imgHoverAlt: "Jovem pequena com kimono laranja colhendo plantas na floresta com passarinhos ao redor"
   },
 ];

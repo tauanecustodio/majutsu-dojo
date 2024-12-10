@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#tel').mask('(00) 00000-0000')
-    $('#cep').mask('00000-0000')
+    $('#cep').mask('00000-000')
     
     $('#form').validate({
         errorElement: 'span',
@@ -20,8 +20,8 @@ $(document).ready(function () {
             },
             cep: {
                 required: true,
-                minlength: 9,
-                maxlength: 9
+                minlength: 8,
+                maxlength: 8
             },
             'type-class': {
                 required: true
