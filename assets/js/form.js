@@ -20,8 +20,8 @@ $(document).ready(function () {
             },
             cep: {
                 required: true,
-                minlength: 8,
-                maxlength: 8
+                minlength: 9,
+                maxlength: 9
             },
             'type-class': {
                 required: true
