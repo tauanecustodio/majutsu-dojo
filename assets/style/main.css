@@ -5,6 +5,9 @@
   --base-color-2: #0a0a0c;
   --shadow-color: #bb9b6833;
   --text-color: #fff;
+
+  --color-error: #FF2E2E;
+  --color-success: #00BD00;
 }
 
 body {
@@ -31,6 +34,7 @@ body {
   right: 20px;
   display: none; /* Oculto por padrão */
   z-index: 1000;
+  font-size: 2rem;
 }
 
 /* ==================================== header ==================================== */
@@ -172,6 +176,17 @@ h1, h2 {
   color: var(--secondary-color);
 }
 
+.btn-close {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center
+}
+
+.btn-close:hover {
+  color: var(--primary-color);
+  box-shadow: 0 0 2px 5px var(--shadow-color);
+}
+
 /* mages section */
 
 .card-cover .img-default {
@@ -236,9 +251,13 @@ h1, h2 {
   margin: 0 auto;
 }
 
-.accordion-item, .accordion-collapse {
+.accordion-item {
   color: var(--secondary-color);
-  border-color: var(--primary-color);
+  border-color: var(--primary-color) !important;
+}
+
+.accordion {
+  --bs-accordion-border-color: var(--primary-color);
 }
 
 .accordion-item:focus {
@@ -248,6 +267,10 @@ h1, h2 {
 .accordion-button, .accordion-button[aria-expanded="true"] {
   color: var(--secondary-color);
   border-color: var(--primary-color);
+}
+
+.accordion-button::after {
+  filter: invert(1);
 }
 
 /* contact section */
@@ -279,6 +302,26 @@ h1, h2 {
 
 input, input::placeholder, textarea::placeholder {
   color: var(--secondary-color) !important;
+}
+
+
+span.error {
+  display: block;
+  color: var(--color-error) !important;
+}
+
+.alert-success {
+  background: var(--base-color-1);
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.alert-success .btn-close {
+  filter: invert(100%) sepia(100%) saturate(5000%) hue-rotate(35deg) brightness(100%) contrast(100%);
+}
+
+.alert-success .btn-close:hover {
+  box-shadow: 0 0 2px 5px var(--color-success);
 }
 
 /* ==================================== footer ==================================== */

@@ -98,6 +98,11 @@
                       <i class="bi bi-star-half"></i> Avaliações
                     </a>
                   </li>
+                  <li class="nav-item me-3 fw-bold">
+                    <a class="nav-link px-0" href="#faq" aria-label="Ir para a seção de avaliações">
+                      <i class="bi bi-question-circle"></i> FAQ
+                    </a>
+                  </li>
                   <li class="nav-item fw-bold">
                     <a class="nav-link px-0" href="#contact" aria-label="Ir para a seçã Fale conosco">
                       <i class="bi bi-envelope me-1"></i> Fale conosco
@@ -1082,16 +1087,16 @@
         <section class="py-5" id="contact">
           <div class="container">
             <h2 class="text-center mb-4">Fale conosco</h2>
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" id="form">
                 <div class="row g-5">
                   <div class="col-lg-4 col-md-4 col-12">
                     <label for="name">Seu none:</label>
                     <input
                     type="text"
                     class="d-block w-100 p-2 mb-3 bg-transparent"
-                    name="full-name"
+                    name="name"
                     placeholder="Nome completo"
-                    id="name" required
+                    id="name"
                     autocomplete="name"
                     />
                     <label for="email">Email:</label>
@@ -1100,47 +1105,47 @@
                     name="email"
                     class="d-block w-100 p-2 mb-3 bg-transparent"
                     placeholder="exemplo@gmail.com"
-                    id="email" required
+                    id="email"
                     autocomplete="Email adrress"
                     />
                     <label for="tel">Telefone:</label>
                     <input
                     type="tel"
-                    name="phone"
+                    name="tel"
                     class="d-block w-100 p-2 mb-3 bg-transparent"
-                    placeholder="(11)11111-1111"
-                    id="tel" required
+                    placeholder="(00) 12345-6789"
+                    id="tel"
                     autocomplete="tel"
                     />
                     <label for="cep">CEP:</label>
                     <input type="text"
                     class="d-block w-100 p-2 mb-3 bg-transparent"
-                    name="cep" placeholder="1234-0000" id="cep" required autocomplete="postal-code" />
+                    name="cep" placeholder="12345-0000" id="cep" autocomplete="postal-code" />
     
                   </div>
                   <div class="col-lg-4 col-md-4 col-12">    
                     <label for="type-class">Qual modalidade de aula escolhida:</label>
-                    <select class="p-2 mb-3 d-block w-100" name="type-class" id="type-class" required>
+                    <select class="p-2 mb-3 d-block w-100" name="type-class" id="type-class">
                       <option value="" disabled selected>Selecione</option>
                       <option value="individual">Individual</option>
                       <option value="group">Em grupo</option>
                     </select>
 
                     <label for="local-class">Você prefere aula online ou precencial?</label>
-                    <select class="p-2 mb-3 d-block w-100" name="local-class" id="local-class" required>
+                    <select class="p-2 mb-3 d-block w-100" name="local-class" id="local-class">
                       <option value="" disabled selected>Selecione</option>
                       <option value="online">Online</option>
                       <option value="precencial">Precencial</option>
                     </select>
                     <label for="level">Qual seu nível de mago atual?</label>
-                    <select class="p-2 mb-3 d-block w-100" name="level" id="level" required>
+                    <select class="p-2 mb-3 d-block w-100" name="level" id="level">
                       <option value="" disabled selected>Selecione</option>
                       <option value="beginner">Iniciante</option>
                       <option value="intermediate">Intermediário</option>
                       <option value="advanced">Avançado</option>
                     </select>
                     <label for="age">Qual sua idade?</label>
-                    <select class="p-2 mb-3 d-block w-100" name="age" id="age" required>
+                    <select class="p-2 mb-3 d-block w-100" name="age" id="age">
                       <option value="" disabled selected>Selecione</option>
                       <option value="beginner">16 a 20</option>
                       <option value="intermediate">21 a 25</option>
@@ -1152,20 +1157,28 @@
                   <div class="col-lg-4 col-md-4 col-12">
                     <label for="objective">Qual habilidade ou área você gostaria de aprimorar com seu treinamento?</label>
                     <textarea rows="3" class="d-block w-100 mt-1 bg-transparent p-2"
-                      name="about"
                       id="objective"
+                      name="objective"
                       placeholder="Meu treinamento corpo a corpo, minha manipulação de água, minhas invocações..."
                     ></textarea>
                     <label for="message-optional" class="mt-2">Há algo mais que deseja perguntar ou dizer?</label>
                     <textarea rows="3" class="d-block w-100 mt-1 bg-transparent p-2"
-                      name="message"
                       id="message-optional"
+                      name="message-optional"
                       placeholder="Mensagem adicional, dúvidas, expectativas, etc"
                     ></textarea>
                   <button type="submit" class="btn rounded-0 mt-3 w-100">Solicitar</button>
                   </div>
                 </div>
             </form>
+
+            <div id="success-alert" class="alert alert-success alert-dismissible fade show mt-4 d-none" role="alert">
+              <p>
+                Seu formulário foi enviado com <strong>Sucesso!</strong>
+              </p>
+              <p>Em alguns dias nossa equipe entrará em contato</p>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar alerta"></button>
+            </div>            
           </div>
         </section>
       </main>
@@ -1192,8 +1205,13 @@
       </button>
     </div>
 
-
-
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- jquery libs  -->
+    <script src="assets/libs/jquery.mask.min.js"></script>
+    <script src="assets/libs/jquery.validate.min.js"></script>
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -1202,5 +1220,6 @@
     ></script>
     <!-- js -->
     <script src="./assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
   </body>
 </html>
