@@ -7,7 +7,9 @@ const mages = [
       "Kazuo é um mago de fogo conhecido por sua maestria em feitiços destrutivos.",
     category: "elementalMagic",
     img: "Kazuo1.webp",
+    imgAlt: "Homem vestindo kimono vermelho, segurando um bastão e com chamas ao redor",
     imgHover: "Kazuo2.webp",
+    imgHoverAlt: "Homem vestindo um kimono vermelho, segurando um bastão em uma mão e fogo na outra"
   },
   {
     id: 2,
@@ -17,7 +19,9 @@ const mages = [
       "Rina é uma curandeira altamente habilidosa que se especializa em restaurar ferimentos físicos e mágicos.",
     category: "supportMagic",
     img: "Rina1.webp",
+    imgAlt: "Jovem vestindo kimono azul, branco e dourado, em frente a um disco dourado",
     imgHover: "Rina2.webp",
+    imgHoverAlt: "Jovem brancavestindo um kimono azul, branco e dourado, sentada em um trono dourado"
   },
   {
     id: 3,
@@ -27,7 +31,9 @@ const mages = [
       "Yuto é um mago do vento, sua magia envolve a invocação de rajadas de vento e criação de poderosos vórtices.",
     category: "elementalMagic",
     img: "Yuto1.webp",
+    imgAlt: "Jovem vestindo kimono branco e verde, segurando uma luz verde nas duas mãos",
     imgHover: "Yuto2.webp",
+    imgHoverAlt: "Jovem vestindo kimono branco e verde, segurando uma luz verde, voando com grandes asas brancas"
   },
   {
     id: 4,
@@ -37,67 +43,81 @@ const mages = [
       "Satsuki é uma feiticeira, sua magia invoca criaturas das trevas e pode manipular sombras para prender ou proteger.",
     category: "darkMagic",
     img: "Satsuki1.webp",
+    imgAlt: "Jovem com chapéu com abas grandes, kimono roxo com efeitos dourados e segura uma luz amarela",
     imgHover: "Satsuki2.webp",
+    imgHoverAlt: "Jovem vestindo um kimono roxo com efeitos dourados e segurando uma luz amarela em cada uma das mãos"
   },
   {
     id: 5,
     name: "Hiroshi Takahashi",
     abilities: ["Treinamento de Magia Elemental (Fogo, Terra, Água, Ar)"],
     description:
-      "Hiroshi é um mestre de todos os elementos clássicos, equilibrando fogo, terra, água e ar. Ele é conhecido por criar tempestades elementares poderosas, utilizando sua magia tanto para combate quanto para defesa.",
+      "Hiroshi é um mestre de todos os elementos clássicos, equilibrando fogo, terra, água e ar.",
     category: "elementalMagic",
     img: "Hiroshi1.webp",
+    imgAlt: "Jovem com kimono verde, azul, vermelho segurando um cajado com fogo",
     imgHover: "Hiroshi2.webp",
+    imgHoverAlt: "Jovem com kimono verde, azul, vermelho segurando um chama nas mãos"
   },
   {
     id: 6,
     name: "Aya Mizuno",
     abilities: ["Magia de Gelo e Formação de Geleiras"],
     description:
-      "Aya é uma maga de gelo, conhecida por sua habilidade de congelar grandes áreas e criar esculturas de gelo intricadas. Sua magia envolve a criação de grandes paredes de gelo, congelamento de inimigos e invocação de nevascas.",
+      "Aya é uma maga de gelo, conhecida por sua habilidade de congelar grandes áreas e criar esculturas de gelo intricadas.",
     category: "elementalMagic",
     img: "Aya1.webp",
+    imgAlt: "Jovem branca, olhos azuis, cabelo gelo, armadura acizentada e segura um cetro azul na mão",
     imgHover: "Aya2.webp",
+    imgHoverAlt: "Jovem branca, olhos azuis, cabelo gelo, armadura acizentada"
   },
   {
     id: 7,
     name: "Rei Saito",
     abilities: ["Manipulação de Luz", "Treinamento de Iluminação"],
     description:
-      "Rei é um mago da luz radiante cujos feitiços são baseados na manipulação da luz pura. Ele é capaz de criar feixes de luz deslumbrantes, escudos protetores e até manipular a luz para fins furtivos.",
+      "Rei é um mago da luz radiante cujos feitiços são baseados na manipulação da luz pura.",
     category: "supportMagic",
     img: "Rei1.webp",
+    imgAlt: "Pequeno jovem com kimono branco e dourado segurando um escudo resplandecente",
     imgHover: "Rei2.webp",
+    imgHoverAlt: "Pequeno jovem com kimono branco e dourado segurando duas espadas resplandecentes"
   },
   {
     id: 8,
     name: "Keiko Fujimoto",
     abilities: ["Manipulação", "Anti-Gravidade"],
     description:
-      "Keiko é uma maga da gravidade energética e aventureira, capaz de manipular as forças gravitacionais. Sua magia permite fazer objetos e pessoas flutuarem ou esmagá-los sob uma força gravitacional intensa, além de criar zonas de gravidade zero.",
+      "Keiko é uma maga da gravidade energética e aventureira, capaz de manipular as forças gravitacionais.",
     category: "specializedMagic",
     img: "Keiko1.webp",
+    imgAlt: "Jovem com traje especial preto voando no espaço",
     imgHover: "Keiko2.webp",
+    imgHoverAlt: "Jovem com traje especial preto voando no espaço"
   },
   {
     id: 9,
     name: "Taro Nakamura",
     abilities: ["Magia Temporal", "Manipulação do Tempo"],
     description:
-      "Taro é um mago sábio que pode desacelerar, acelerar ou reverter o tempo. Sua magia frequentemente distorce a realidade, fazendo momentos se repetirem ou avançarem rapidamente, manipulando o tempo em áreas localizadas.",
+      "Taro é um mago sábio que pode desacelerar, acelerar ou reverter o tempo.",
     category: "specializedMagic",
     img: "Taro1.webp",
+    imgAlt: "Homen com kimono azulado ornamentado de relógios",
     imgHover: "Taro2.webp",
+    imgHoverAlt: "Homen com kimono azulado ornamentado de relógios"
   },
   {
     id: 10,
     name: "Haruka Sakamoto",
     abilities: ["Magia Botânica", "Crescimento de Plantas"],
     description:
-      "Haruka é uma maga da natureza especializada em crescimento de plantas e comunicação com o mundo natural. Sua magia envolve a criação de jardins exuberantes, crescimento rápido de plantas e controle de criaturas baseadas em plantas.",
+      "Haruka é uma maga da natureza especializada em crescimento de plantas e comunicação com o mundo natural.",
     category: "specializedMagic",
     img: "Haruka1.webp",
+    imgAlt: "Jovem pequena com kimono branco colhendo plantas na floresta",
     imgHover: "Haruka2.webp",
+    imgHoverAlt: "Jovem pequena com kimono laranja colhendo plantas na floresta com passarinhos ao redor"
   },
 ];
 
@@ -125,13 +145,13 @@ const createCard = (mage) => {
 
   const imgDefault = document.createElement('img');
   imgDefault.src = `./assets/images/character/${mage.img}`;
-  imgDefault.alt = `${mage.name} image`;
+  imgDefault.alt = `${mage.imgAlt}`;
   imgDefault.classList.add('img-default', 'card-img-top');
   imgDefault.loading = 'lazy';
 
   const imgHover = document.createElement('img');
   imgHover.src = `./assets/images/character/${mage.imgHover}`;
-  imgHover.alt = `${mage.name} image hover`;
+  imgHover.alt = `${mage.imgHoverAlt}`;
   imgHover.classList.add('img-hover', 'card-img-top');
   imgHover.loading = 'lazy';
 
