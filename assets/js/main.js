@@ -6,9 +6,9 @@ const mages = [
     description:
       "Kazuo é um mago de fogo conhecido por sua maestria em feitiços destrutivos.",
     category: "elementalMagic",
-    img: "Kazuo1.webp",
+    img: "kazuo1.webp",
     imgAlt: "Homem vestindo kimono vermelho, segurando um bastão e com chamas ao redor",
-    imgHover: "Kazuo2.webp",
+    imgHover: "kazuo2.webp",
     imgHoverAlt: "Homem vestindo um kimono vermelho, segurando um bastão em uma mão e fogo na outra"
   },
   {
@@ -18,9 +18,9 @@ const mages = [
     description:
       "Rina é uma curandeira altamente habilidosa que se especializa em restaurar ferimentos físicos e mágicos.",
     category: "supportMagic",
-    img: "Rina1.webp",
+    img: "rina1.webp",
     imgAlt: "Jovem vestindo kimono azul, branco e dourado, em frente a um disco dourado",
-    imgHover: "Rina2.webp",
+    imgHover: "rina2.webp",
     imgHoverAlt: "Jovem brancavestindo um kimono azul, branco e dourado, sentada em um trono dourado"
   },
   {
@@ -30,7 +30,7 @@ const mages = [
     description:
       "Yuto é um mago do vento, sua magia envolve a invocação de rajadas de vento e criação de poderosos vórtices.",
     category: "elementalMagic",
-    img: "Yuto1.webp",
+    img: "yuto1.webp",
     imgAlt: "Jovem vestindo kimono branco e verde, segurando uma luz verde nas duas mãos",
     imgHover: "Yuto2.webp",
     imgHoverAlt: "Jovem vestindo kimono branco e verde, segurando uma luz verde, voando com grandes asas brancas"
@@ -42,7 +42,7 @@ const mages = [
     description:
       "Satsuki é uma feiticeira, sua magia invoca criaturas das trevas e pode manipular sombras para prender ou proteger.",
     category: "darkMagic",
-    img: "Satsuki1.webp",
+    img: "satsuki1.webp",
     imgAlt: "Jovem com chapéu com abas grandes, kimono roxo com efeitos dourados e segura uma luz amarela",
     imgHover: "Satsuki2.webp",
     imgHoverAlt: "Jovem vestindo um kimono roxo com efeitos dourados e segurando uma luz amarela em cada uma das mãos"
@@ -54,7 +54,7 @@ const mages = [
     description:
       "Hiroshi é um mestre de todos os elementos clássicos, equilibrando fogo, terra, água e ar.",
     category: "elementalMagic",
-    img: "Hiroshi1.webp",
+    img: "hiroshi1.webp",
     imgAlt: "Jovem com kimono verde, azul, vermelho segurando um cajado com fogo",
     imgHover: "Hiroshi2.webp",
     imgHoverAlt: "Jovem com kimono verde, azul, vermelho segurando um chama nas mãos"
@@ -66,7 +66,7 @@ const mages = [
     description:
       "Aya é uma maga de gelo, conhecida por sua habilidade de congelar grandes áreas e criar esculturas de gelo intricadas.",
     category: "elementalMagic",
-    img: "Aya1.webp",
+    img: "aya1.webp",
     imgAlt: "Jovem branca, olhos azuis, cabelo gelo, armadura acizentada e segura um cetro azul na mão",
     imgHover: "Aya2.webp",
     imgHoverAlt: "Jovem branca, olhos azuis, cabelo gelo, armadura acizentada"
@@ -78,7 +78,7 @@ const mages = [
     description:
       "Rei é um mago da luz radiante cujos feitiços são baseados na manipulação da luz pura.",
     category: "supportMagic",
-    img: "Rei1.webp",
+    img: "rei1.webp",
     imgAlt: "Pequeno jovem com kimono branco e dourado segurando um escudo resplandecente",
     imgHover: "Rei2.webp",
     imgHoverAlt: "Pequeno jovem com kimono branco e dourado segurando duas espadas resplandecentes"
@@ -90,7 +90,7 @@ const mages = [
     description:
       "Keiko é uma maga da gravidade energética e aventureira, capaz de manipular as forças gravitacionais.",
     category: "specializedMagic",
-    img: "Keiko1.webp",
+    img: "keiko1.webp",
     imgAlt: "Jovem com traje especial preto voando no espaço",
     imgHover: "Keiko2.webp",
     imgHoverAlt: "Jovem com traje especial preto voando no espaço"
@@ -102,7 +102,7 @@ const mages = [
     description:
       "Taro é um mago sábio que pode desacelerar, acelerar ou reverter o tempo.",
     category: "specializedMagic",
-    img: "Taro1.webp",
+    img: "taro1.webp",
     imgAlt: "Homen com kimono azulado ornamentado de relógios",
     imgHover: "Taro2.webp",
     imgHoverAlt: "Homen com kimono azulado ornamentado de relógios"
@@ -114,7 +114,7 @@ const mages = [
     description:
       "Haruka é uma maga da natureza especializada em crescimento de plantas e comunicação com o mundo natural.",
     category: "specializedMagic",
-    img: "Haruka1.webp",
+    img: "haruka1.webp",
     imgAlt: "Jovem pequena com kimono branco colhendo plantas na floresta",
     imgHover: "Haruka2.webp",
     imgHoverAlt: "Jovem pequena com kimono laranja colhendo plantas na floresta com passarinhos ao redor"
