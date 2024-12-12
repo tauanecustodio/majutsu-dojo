@@ -1,4 +1,4 @@
-# Majutsy Dojo
+# Majutsu Dojo
 
 > Contrate magos experientes para treinar suas habilidades mágicas e se tornar um mestre em qualquer área do mundo mágico!
 
@@ -6,7 +6,7 @@ Este projeto é uma landingpage de uma escola de magos fictícia.
 
 ## 📑 Índice
  
-- [Majutsy Dojo](#majutsy-dojo)
+- [Majutsu Dojo](#majutsu-dojo)
   - [📑 Índice](#-índice)
   - [🖥️ Preview e deploy](#️-preview-e-deploy)
   - [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
@@ -18,7 +18,7 @@ Este projeto é uma landingpage de uma escola de magos fictícia.
 
 ## 🖥️ Preview e deploy
 
-[Visite o deploy do projeto](https://majutsy-dojo.vercel.app/)
+[Visite o deploy do projeto](https://majutsu-dojo.vercel.app/)
 
 ![Gif preview](preview.gif)
 
@@ -41,19 +41,20 @@ Este projeto é uma landingpage de uma escola de magos fictícia.
 - Modais dinâmicos
 - Formulário com validação via JQuery
 - Acessibilidade
+- Responsivo em todas telas
 
 ## ⬇️ Como Rodar o Projeto
 
 1. Clone o repositório:
     
     ```bash
-    git clone https://github.com/seu-usuario/majutsy-dojo.git
+    git clone https://github.com/seu-usuario/majutsu-dojo.git
     ```
 
 2. Navegue até o diretório do projeto:
     
     ``` bash  
-        cd majutsy-dojo  
+    cd majutsu-dojo  
     ```
 
 3. Abra o arquivo ´index.html´ no navegador
