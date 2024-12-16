@@ -144,13 +144,13 @@ const createCard = (mage) => {
   cardCover.classList.add('card-cover', 'position-relative');
 
   const imgDefault = document.createElement('img');
-  imgDefault.src = `./assets/images/character/${mage.img}`;
+  imgDefault.src = `./images/character/${mage.img}`;
   imgDefault.alt = `${mage.imgAlt}`;
   imgDefault.classList.add('img-default', 'card-img-top');
   imgDefault.loading = 'lazy';
 
   const imgHover = document.createElement('img');
-  imgHover.src = `./assets/images/character/${mage.imgHover}`;
+  imgHover.src = `./images/character/${mage.imgHover}`;
   imgHover.alt = `${mage.imgHoverAlt}`;
   imgHover.classList.add('img-hover', 'card-img-top');
   imgHover.loading = 'lazy';
